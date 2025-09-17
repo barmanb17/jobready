@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .main-content {
+      flex: 3;
+      margin-right: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    article {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article h2 {
+      margin-top: 0;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Blog</h1>
+    <p>Sharing my thoughts and experiences</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <article>
+        <h2>Blog Post 1</h2>
+        <p><em>12/09/2025 by Bijoy</em></p>
+        <p>This is the first post on my blog. I’m learning how to create a proper layout using HTML and CSS.</p>
+      </article>
+      
+      <article>
+        <h2>Blog Post 2</h2>
+        <p><em>11/09/2025 by Bijoy</em></p>
+        <p>Today I practiced Flexbox for building responsive layouts. It makes positioning elements much easier!</p>
+      </article>
+    </div>
+
+    <aside class="sidebar">
+      <h3>About Me</h3>
+      <p>I’m Bijoy, learning web development and sharing my journey here.</p>
+      
+      <h3>Categories</h3>
+      <ul>
+        <li>Web Development</li>
+        <li>Projects</li>
+        <li>Learning</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bijoy Barman | My Blog</p>
+  </footer>
+
+</body>
+</html>
