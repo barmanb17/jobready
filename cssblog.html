@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -106,6 +106,121 @@
 
   <footer>
     <p>&copy; 2025 Bijoy Barman | My Blog</p>
+  </footer>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .main-content {
+      flex: 3;
+      margin-right: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    article {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* ✅ Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .main-content {
+        margin-right: 0;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Blog</h1>
+    <p>Making layouts mobile-friendly</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <article>
+        <h2>Post One</h2>
+        <p>This is the first post. On smaller screens, the sidebar will move below this content.</p>
+      </article>
+      <article>
+        <h2>Post Two</h2>
+        <p>Try resizing your browser window to see the responsive effect in action.</p>
+      </article>
+    </div>
+
+    <aside class="sidebar">
+      <h3>About Me</h3>
+      <p>I’m Bijoy, learning responsive design with media queries.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Responsive Blog | Bijoy</p>
   </footer>
 
 </body>
